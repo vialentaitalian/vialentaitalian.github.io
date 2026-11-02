@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free PDFs · Via Lenta</title>
+<meta name="description" content="Free PDF of every Via Lenta episode: the story in Italian and English, the new words, a quiz with answers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&amp;family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root { --carta: #F6EFE3; --inchiostro: #1F2433; --terracotta: #B8462E; --traduzione: #4A5568; --bianco: #FFFFFF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--carta); color: var(--inchiostro); font-family: 'Inter', system-ui, sans-serif; line-height: 1.5; }
+  main { max-width: 560px; margin: 0 auto; padding: 56px 16px; }
+  h1 { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 2.6rem; line-height: 1.05; margin: 0 0 8px; }
+  .motto { font-family: 'Fraunces', Georgia, serif; font-weight: 600; font-size: 1.2rem; margin: 0 0 24px; }
+  p { margin: 0 0 16px; }
+  .it { font-style: italic; color: var(--traduzione); }
+  .bottoni { display: grid; gap: 12px; margin: 32px 0; }
+  a.bottone { display: block; padding: 14px 18px; border-radius: 10px; text-decoration: none; font-weight: 600; text-align: center; border: 2px solid var(--inchiostro); color: var(--inchiostro); }
+  a.bottone.primo { background: var(--terracotta); border-color: var(--terracotta); color: var(--bianco); }
+  footer { font-size: .9rem; color: var(--traduzione); }
+  footer a { color: inherit; }
+  .pdf { background: var(--bianco); border-radius: 12px; padding: 16px 18px; margin: 0 0 14px; }
+  .pdf .ep { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--terracotta); }
+  .pdf h2 { font-family: 'Fraunces', Georgia, serif; font-weight: 700; font-size: 1.4rem; margin: 2px 0 0; }
+  .pdf .en { color: var(--traduzione); margin: 0 0 12px; }
+  .pdf .azioni { display: flex; gap: 10px; flex-wrap: wrap; }
+  .pdf .azioni a.bottone { flex: 1; padding: 10px 12px; min-width: 140px; }
+  a.indietro { color: var(--inchiostro); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Free PDFs</h1>
+  <p class="motto">One for every episode.</p>
+  <p>The whole story in Italian and English, the new words, a note about Italian life, a quiz and short exercises with the answers.</p>
+  <div class="pdf">
+    <div class="ep">Episode 2 · A1</div>
+    <h2>Un caffè, per favore</h2>
+    <p class="en">A Coffee, Please</p>
+    <div class="azioni"><a class="bottone primo" href="https://vialentaitalian.github.io/pdf/via-lenta-S1E02.pdf">Download PDF</a><a class="bottone" href="https://www.youtube.com/watch?v=iLOlgL0okG0">Watch the episode</a></div>
+  </div>
+  <div class="pdf">
+    <div class="ep">Episode 1 · A1</div>
+    <h2>Ciao, sono Maya</h2>
+    <p class="en">Hi, I'm Maya</p>
+    <div class="azioni"><a class="bottone primo" href="https://vialentaitalian.github.io/pdf/via-lenta-S1E01.pdf">Download PDF</a><a class="bottone" href="https://www.youtube.com/watch?v=8lMLR9H2qgw">Watch the episode</a></div>
+  </div>
+  <p>Get a short letter every week, with the new episode: <a class="indietro" href="https://vialentaitalian.github.io/free">subscribe for free</a>.</p>
+  <footer><a href="../">← Via Lenta</a></footer>
+</main>
+</body>
+</html>
