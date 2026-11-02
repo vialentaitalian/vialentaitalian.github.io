@@ -36,13 +36,19 @@
   <h1>Free PDFs</h1>
   <p class="motto">One for every episode.</p>
   <p>The whole story in Italian and English, the new words, a note about Italian life, a quiz and short exercises with the answers.</p>
-  <div class="pdf">
+  <div class="pdf" data-dal="2026-11-03T17:00:00.000Z" hidden>
+    <div class="ep">Episode 3 · A1</div>
+    <h2>La chiave</h2>
+    <p class="en">The Key</p>
+    <div class="azioni"><a class="bottone primo" href="https://vialentaitalian.github.io/pdf/via-lenta-S1E03.pdf">Download PDF</a><a class="bottone" href="https://www.youtube.com/watch?v=MN5niqVrCw0">Watch the episode</a></div>
+  </div>
+  <div class="pdf" data-dal="2026-10-27T17:00:00.000Z">
     <div class="ep">Episode 2 · A1</div>
     <h2>Un caffè, per favore</h2>
     <p class="en">A Coffee, Please</p>
     <div class="azioni"><a class="bottone primo" href="https://vialentaitalian.github.io/pdf/via-lenta-S1E02.pdf">Download PDF</a><a class="bottone" href="https://www.youtube.com/watch?v=iLOlgL0okG0">Watch the episode</a></div>
   </div>
-  <div class="pdf">
+  <div class="pdf" data-dal="2026-10-20T16:00:00.000Z">
     <div class="ep">Episode 1 · A1</div>
     <h2>Ciao, sono Maya</h2>
     <p class="en">Hi, I'm Maya</p>
@@ -50,6 +56,7 @@
   </div>
   <p>Get a short letter every week, with the new episode: <a class="indietro" href="https://vialentaitalian.github.io/free">subscribe for free</a>.</p>
   <footer><a href="../">← Via Lenta</a></footer>
+  <script>for (const e of document.querySelectorAll('[data-dal]')) e.hidden = Date.now() < Date.parse(e.dataset.dal);</script>
 </main>
 </body>
 </html>
